@@ -1,0 +1,27 @@
+#ifndef LINKED_LIST_H
+#define LINKED_LIST_H
+
+#include <iostream>
+
+struct Node {
+public:
+  int data;
+  Node* next;
+
+  Node (int val);
+};
+
+class linked_list {
+public:
+  LinkedList();
+  void insertAtBeginning(int val);
+  void insertAtEnd(int val);
+  void deleteNode(int val);
+  void display();
+private:
+  Node* head;
+};
+
+#endif
+
+
